@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <form action="https://formspree.io/f/mjkvbgnn" method="POST">
+  
+       <fieldset>
+       <legend>
+        <h2>Registro de usuario - Ingrese sus datos</h2>
+       </legend>
+
+       <p>
+        <label for="name">nombre/s</label>
+        <input type="text" name="name" id="name" required minlength="3" maxlength="10">
+       </p>
+       <p>
+        <label for="lastname">apellido</label>
+        <input type="text" name="lastname" id="lastname" required minlength="3" maxlength="15">
+       </p>
+       <p>
+        <label for="email">correo electronico</label>
+        <input type="email" name="email" id="email" placeholder="usuario@cuenta.com" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
+        " required>
+       </p>
+       <p>
+        <label for="phone">telefono</label>
+        <input type="tel" name="phone" id="phone" placeholder="123-123-1234" >
+       </p>
+       <p>
+        <label for="direccion">direccion</label>
+        <input type="text" name="direccion" id="direccion">
+       </p>
+       <p>
+        <label for="codPos">codigo postal</label>
+        <input type="number" name="codPos" id="codPos">
+       </p>
+       <p>
+        <label for="date">fecha de nacimiento</label>
+        <input type="date" name="date" id="date">
+       </p>
+       <p>
+        <label for="nivel">nivel de estudio</label>
+        <input type="radio" name="nivel" id="1">primario
+        <input type="radio" name="nivel" id="2">secundario
+        <input type="radio" name="nivel" id="3">universitario
+       </p>
+       <p>
+        <label for="ocupacion">ocupacion</label>
+        <select name="ocupacion" id="ocupacion">
+           
+             <option value="0"></option>
+             <option value="1">desempleado</option>
+             <option value="2">empleado</option>
+             <option value="3">estudiante</option>
+           
+        </select>
+       </p>
+       <p>
+        <label for="">conocimiento en programacion</label>
+        <input type="checkbox" name="html" value="html" id="conocimiento">html
+        <input type="checkbox" name="css" value="css" id="conocimiento">css
+        <input type="checkbox" name="js" value="js" id="conocimiento">js
+       </p>
+       <p>
+        <label for="imagen">foto de perfil</label>
+        <input type="file" name="imagen" id="imagen">
+       </p>
+       <p>
+        <label for="">contraseña</label>
+        <input type="password" name="" id="">
+       </p>
+       <p>
+        <label for="">descripcion</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+       </p>
+
+       <p>
+        <input type="submit">
+        <input type="reset">
+       </p>
+
+      </fieldset>
+  </form>
+
+
+
+</body>
+</html>
